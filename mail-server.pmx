@@ -1,0 +1,23 @@
+---
+name: mail-server
+description: ''
+keywords: ''
+type: Default
+documentation: ''
+images:
+- name: esminis_mail-server-postfix-vm-pop3d_latest
+  source: esminis/mail-server-postfix-vm-pop3d:latest
+  type: Default
+  ports:
+  - host_port: '110'
+    container_port: '110'
+    proto: TCP
+  - host_port: '465'
+    container_port: '465'
+    proto: TCP
+  - host_port: '8443'
+    container_port: '8443'
+    proto: TCP
+  - host_port: '995'
+    container_port: '995'
+    proto: TCP
